@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en" data-preset="editorial" data-base="dark" data-hero="full-bleed" data-header="glass-overlay" data-cards="elevated" style="--lp-primary-50:246 250 254;--lp-primary-100:234 244 253;--lp-primary-200:209 231 250;--lp-primary-300:176 212 245;--lp-primary-400:131 188 238;--lp-primary-500:70 159 228;--lp-primary-600:55 133 192;--lp-primary-700:36 99 146;--lp-primary-800:30 88 132;--lp-primary-900:19 68 105;--lp-secondary-50:249 250 251;--lp-secondary-100:242 244 246;--lp-secondary-200:226 230 236;--lp-secondary-300:206 213 223;--lp-secondary-400:179 190 205;--lp-secondary-500:148 163 184;--lp-secondary-600:122 135 154;--lp-secondary-700:90 100 115;--lp-secondary-800:79 89 102;--lp-secondary-900:61 68 79;--lp-neutral-50:247 248 249;--lp-neutral-100:235 237 241;--lp-neutral-200:212 217 224;--lp-neutral-300:182 190 202;--lp-neutral-400:144 156 173;--lp-neutral-500:100 116 139;--lp-neutral-600:84 98 118;--lp-neutral-700:64 75 91;--lp-neutral-800:57 68 82;--lp-neutral-900:46 54 66;--lp-accent-50:255 250 245;--lp-accent-100:255 244 232;--lp-accent-200:254 231 205;--lp-accent-300:253 213 168;--lp-accent-400:250 189 115;--lp-accent-500:245 158 11;--lp-accent-600:205 130 0;--lp-accent-700:153 94 0;--lp-accent-800:137 82 0;--lp-accent-900:107 61 0;--lp-surface:11 18 32;--lp-surface-alt:17 26 46;--lp-surface-container:19 28 48;--lp-surface-container-high:27 39 64;--lp-on-surface:232 237 245;--lp-on-surface-variant:147 163 184;--lp-outline:42 54 80;--lp-outline-variant:27 39 64;--lp-accent:245 158 11;--lp-on-accent:0 0 0;--lp-brand:#469fe4;--lp-accent:#f59e0b;--lp-font:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;--lp-font-heading:'Newsreader', Georgia, serif;--lp-heading-weight:600;--lp-heading-tracking:-0.01em;--lp-text-display-desktop:48px;--lp-text-display-mobile:34px;--lp-text-display-tracking:-0.01em;--lp-text-h1-desktop:40px;--lp-text-h1-mobile:30px;--lp-text-h1-tracking:-0.01em;--lp-text-h2-desktop:28px;--lp-text-h2-mobile:23px;--lp-text-h2-tracking:0em;--lp-text-h3-desktop:22px;--lp-text-h3-mobile:19px;--lp-text-h3-tracking:0em;--lp-radius-sm:0.5rem;--lp-radius-md:1rem;--lp-radius-lg:1.5rem;--lp-radius-xl:2rem;--lp-radius-card:1.25rem;--lp-radius-btn:14px;--lp-radius-chip:9999px;--lp-shadow-card:0 8px 24px rgb(15 23 42 / 0.08);--lp-shadow-hover:0 16px 40px rgb(15 23 42 / 0.16);--lp-card-border:1px solid transparent;--lp-ghost-border:1px solid transparent;--lp-ghost-bg:rgb(var(--lp-surface-alt));--lp-ghost-bg-hover:rgb(var(--lp-surface-container-high));--lp-link-decoration:none;--lp-link-underline-color:transparent;--lp-signature:none;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Your San Antonio Apartment Shortlist | San Antonio Apartment Reviews</title>
+<meta name="description" content="One quick form gets you a free list of San Antonio apartments matched to your budget, area, and approval odds — with current pricing and move-in specials.">
+<link rel="canonical" href="https://form.sanantonioapartmentreviews.com/">
+<link rel="icon" href="/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site-a.css">
+<link rel="stylesheet" href="/css/site-b.css">
+<style>body{font-family:var(--lp-font)}</style>
+<style>
+/* utilities used by the form card that the compiled site CSS does not include */
+.border-slate-100 { border-color: #f1f5f9; }
+.border-slate-200 { border-color: #e2e8f0; }
+.h-7 { height: 1.75rem; }
+.rotate-180 { transform: rotate(180deg); }
+.space-y-3 > * + * { margin-top: .75rem; }
+.text-brand-black { color: #111827; }
+.text-slate-400 { color: #94a3b8; }
+.text-slate-500 { color: #64748b; }
+.text-slate-600 { color: #475569; }
+.text-slate-700 { color: #334155; }
+/* the card interior is a light island on a dark page: pin its own colors */
+.sa-card { background: #fff; border-radius: 1rem; overflow: hidden;
+  box-shadow: 0 16px 48px rgb(0 0 0 / .45); }
+.sa-card input, .sa-card select { background: #fff; color: #334155; font-family: var(--lp-font); }
+.sa-card input:focus, .sa-card select:focus { outline: none; border-color: #469fe4;
+  box-shadow: 0 0 0 3px rgb(70 159 228 / .25); }
+.sa-card input[type="checkbox"] { accent-color: #469fe4; }
+/* page chrome */
+.serif { font-family: var(--lp-font-heading); font-weight: var(--lp-heading-weight, 600);
+  letter-spacing: -0.01em; }
+.pain-item { display: flex; gap: .65rem; align-items: flex-start;
+  color: rgb(var(--lp-on-surface-variant)); font-size: 15px; line-height: 1.5; }
+.pain-item svg { flex-shrink: 0; margin-top: 3px; color: rgb(var(--lp-primary-400)); }
+.sa-panel { background: rgb(var(--lp-surface-container)); border: 1px solid rgb(var(--lp-outline));
+  border-radius: var(--lp-radius-card, 14px); }
+.stat-num { font-family: var(--lp-font-heading); font-size: 1.9rem; color: rgb(var(--lp-on-surface)); }
+/* utilities used on this page that the compiled site CSS does not include */
+.pt-5 { padding-top: 1.25rem; }
+.pb-10 { padding-bottom: 2.5rem; }
+.mt-9 { margin-top: 2.25rem; }
+.py-3\.5 { padding-top: .875rem; padding-bottom: .875rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.text-\[13px\] { font-size: 13px; }
+.text-\[27px\] { font-size: 27px; }
+.leading-\[1\.15\] { line-height: 1.15; }
+.text-primary-400 { color: rgb(var(--lp-primary-400)); }
+@media (min-width: 640px) {
+  .sm\:pt-8 { padding-top: 2rem; }
+  .sm\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .sm\:text-base { font-size: 16px; line-height: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .lg\:block { display: block; }
+  .lg\:gap-12 { gap: 3rem; }
+  .lg\:justify-start { justify-content: flex-start; }
+  .lg\:mx-0 { margin-left: 0; margin-right: 0; }
+  .lg\:pb-14 { padding-bottom: 3.5rem; }
+  .lg\:text-left { text-align: left; }
+  .lg\:text-\[2\.6rem\] { font-size: 2.6rem; }
+}
+</style>
+</head>
+<body class="min-h-screen flex flex-col">
+<header class="lp-site-header sticky top-0 z-40 border-b border-outline/40 bg-surface-container/70 backdrop-blur-xl"> <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3"> <a href="https://sanantonioapartmentreviews.com/" class="flex shrink-0 items-center gap-2"> <img src="/images/logo.png" alt="San Antonio Apartment Reviews Guide" class="h-12 w-auto">  </a> <!-- Desktop nav. Kept intentionally lean (4-5 items): no Home (the logo covers it), tools fold
+         into the guides dropdown, and About/Methodology live in the footer only. --> <nav class="hidden items-center gap-6 md:flex" aria-label="Primary"> <!-- Browse --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Find Apartment <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 min-w-[16rem] p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://sanantonioapartmentreviews.com/browse/" class="flex items-center justify-between rounded-btn px-3 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50">Search &amp; map <span aria-hidden="true">&rarr;</span></a> <div class="my-1 border-t border-outline-variant"></div>  <a href="https://sanantonioapartmentreviews.com/browse/?category=luxury-apartments" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Luxury Apartments</a><a href="https://sanantonioapartmentreviews.com/browse/?category=student-apartments" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Student Housing</a><a href="https://sanantonioapartmentreviews.com/browse/?category=senior-apartments" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Senior Living Apartments</a><a href="https://sanantonioapartmentreviews.com/browse/?category=affordable-housing" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Affordable &amp; Section 8 Housing</a><a href="https://sanantonioapartmentreviews.com/browse/?category=pet-friendly-apartments" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Pet-Friendly Apartments</a><a href="https://sanantonioapartmentreviews.com/browse/?category=gated-community" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Gated &amp; Secured Communities</a><a href="https://sanantonioapartmentreviews.com/browse/?category=furnished-corporate" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Furnished &amp; Corporate Housing</a> </div> </div> <!-- Cities (real city hubs; shown alongside Areas in the mixed case) --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Search Area <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 min-w-[16rem] p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://sanantonioapartmentreviews.com/san-antonio-tx/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">San Antonio, TX</a> </div> </div> <!-- Areas (region's own neighborhoods) -->  <!-- Best --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Top Rated <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 min-w-[16rem] p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://sanantonioapartmentreviews.com/san-antonio-tx/best/apartment-complexes/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Best Apartments in San Antonio</a>  </div> </div> <!-- Content sections: ONE dropdown of section INDEX links (Guides / Tools / Resources / Glossary),
+           never the individual guide/tool titles. Parent label varied per site (navLabel('sections')). --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Renter Guides <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 min-w-[16rem] p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://sanantonioapartmentreviews.com/guide/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Insights</a><a href="https://sanantonioapartmentreviews.com/tools/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Calculators</a><a href="https://sanantonioapartmentreviews.com/resources/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Links</a><a href="https://sanantonioapartmentreviews.com/glossary/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Terms</a> </div> </div> <a href="https://sanantonioapartmentreviews.com/compare/" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600">Compare</a> <form action="https://sanantonioapartmentreviews.com/browse/" method="get" role="search" class="relative ml-1"> <label class="sr-only" for="lp-nav-search">Search businesses</label> <input id="lp-nav-search" type="search" name="q" placeholder="Search…" class="lp-input w-44 py-2 pl-4 pr-9 text-sm"> <svg class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-on-surface-variant" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"></circle><path d="m14 14 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> </form> <div class="ml-1 flex items-center gap-2"> <a href="tel:210-729-7713" aria-label="Call" class="flex h-9 w-9 items-center justify-center rounded-full text-on-surface-variant transition-colors hover:bg-surface-alt hover:text-primary-600"> <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg> </a>  <a href="#get-list" class="lp-accent-bg text-on-accent whitespace-nowrap rounded-btn px-3.5 py-2 text-sm font-semibold">Check Availability</a> </div> </nav> <!-- Mobile menu: full-screen sheet. <details> keeps it working with no JS; the burger swaps to
+         an X via CSS on [open]. The panel is ABSOLUTE (top-full), not fixed: the header's
+         backdrop-blur creates a containing block for fixed descendants, so position:fixed would
+         resolve against the header box, not the viewport. Anchoring to the header (itself
+         fixed/sticky at top-0) gives the same full-screen result reliably. --> <details class="lp-mnav md:hidden"> <summary class="lp-btn-ghost flex cursor-pointer list-none p-2 text-on-surface-variant" aria-label="Menu"> <svg class="lp-mnav-burger h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> <svg class="lp-mnav-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> <span class="sr-only">Menu</span> </summary> <div class="lp-mnav-panel absolute inset-x-0 top-full z-40 overflow-y-auto overscroll-contain border-t border-outline bg-surface-container"> <div class="mx-auto max-w-6xl px-4 pb-8 pt-4"> <form action="https://sanantonioapartmentreviews.com/browse/" method="get" role="search" class="relative mb-2"> <label class="sr-only" for="lp-mnav-search">Search businesses</label> <input id="lp-mnav-search" type="search" name="q" placeholder="Search businesses…" class="lp-input w-full py-3 pl-4 pr-11 text-base"> <svg class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-on-surface-variant" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"></circle><path d="m14 14 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> </form> <div class="mb-3 flex gap-2"> <a href="#get-list" class="lp-accent-bg text-on-accent flex-1 rounded-btn px-4 py-3 text-center text-base font-semibold">Check Availability</a> <a href="tel:210-729-7713" class="flex items-center justify-center rounded-btn border border-outline px-4 py-3 text-base font-medium text-on-surface">Call</a> </div> <nav class="divide-y divide-outline-variant" aria-label="Mobile"> <a href="https://sanantonioapartmentreviews.com/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Home</a> <a href="https://sanantonioapartmentreviews.com/browse/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Browse &amp; map</a> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Find Apartment <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3">  <a href="https://sanantonioapartmentreviews.com/browse/?category=luxury-apartments" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Luxury Apartments</a><a href="https://sanantonioapartmentreviews.com/browse/?category=student-apartments" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Student Housing</a><a href="https://sanantonioapartmentreviews.com/browse/?category=senior-apartments" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Senior Living Apartments</a><a href="https://sanantonioapartmentreviews.com/browse/?category=affordable-housing" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Affordable &amp; Section 8 Housing</a><a href="https://sanantonioapartmentreviews.com/browse/?category=pet-friendly-apartments" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Pet-Friendly Apartments</a><a href="https://sanantonioapartmentreviews.com/browse/?category=gated-community" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Gated &amp; Secured Communities</a><a href="https://sanantonioapartmentreviews.com/browse/?category=furnished-corporate" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Furnished &amp; Corporate Housing</a> </div> </details> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Search Area <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3"> <a href="https://sanantonioapartmentreviews.com/san-antonio-tx/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">San Antonio, TX</a> </div> </details>   <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Renter Guides <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3"> <a href="https://sanantonioapartmentreviews.com/guide/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Insights</a><a href="https://sanantonioapartmentreviews.com/tools/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Calculators</a><a href="https://sanantonioapartmentreviews.com/resources/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Links</a><a href="https://sanantonioapartmentreviews.com/glossary/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Terms</a> </div> </details> <a href="https://sanantonioapartmentreviews.com/compare/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Compare</a> </nav> </div> </div> </details> </div> </header>
+<script>
+  (function () {
+    var h = document.querySelector('header.lp-site-header');
+    if (!h) return;
+    var setH = function () { document.documentElement.style.setProperty('--lp-header-h', h.offsetHeight + 'px'); };
+    setH();
+    window.addEventListener('resize', setH, { passive: true });
+    var overlay = h.classList.contains('lp-header-overlay');
+    var atTop = function () { h.classList.toggle('lp-at-top', window.scrollY < 60); };
+    var m = h.querySelector('.lp-mnav');
+    if (m) {
+      m.addEventListener('toggle', function () {
+        // Lock page scroll behind the sheet; over a photo hero, solidify the transparent header so
+        // the nav row reads against the sheet, not the hero. atTop() restores it on close.
+        document.documentElement.classList.toggle('lp-mnav-open', m.open);
+        if (!overlay) return;
+        if (m.open) h.classList.remove('lp-at-top'); else atTop();
+      });
+    }
+    if (!overlay) return;
+    atTop();
+    window.addEventListener('scroll', atTop, { passive: true });
+  })();
+</script>
+<main class="flex-1">
+
+<section class="border-b border-outline" id="get-list">
+  <div class="mx-auto grid max-w-6xl items-start gap-8 px-4 pb-10 pt-5 sm:pt-8 lg:grid-cols-2 lg:gap-12 lg:pb-14">
+    <div class="text-center lg:sticky lg:top-24 lg:text-left">
+      <h1 class="serif text-[27px] leading-[1.15] text-on-surface sm:text-4xl lg:text-[2.6rem]">
+        Reading the reviews? Get the shortlist worth touring.</h1>
+      <p class="mx-auto mt-2 max-w-md text-[15px] text-on-surface-variant sm:text-base lg:mx-0">
+        Fill this out once and we'll send a free shortlist built around your budget, your area,
+        and what you'd realistically get approved for &mdash; with this week's pricing and specials.</p>
+      <p class="mt-2.5 mb-1 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[13px] font-medium text-on-surface lg:justify-start">
+        <span class="inline-flex items-center gap-1"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>$0 cost</span>
+        <span class="inline-flex items-center gap-1"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Usually a 1-day turnaround</span>
+        <span class="inline-flex items-center gap-1"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed locators</span>
+      </p>
+      <ul class="mx-auto mt-6 hidden max-w-md space-y-4 text-left lg:block"><li class="pain-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>The reviews are all over the place — five stars from move-in day, one star from year two. We read them for a living and know which complaints are patterns and which are one-offs.</span></li><li class="pain-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Advertised rents go stale fast here. We confirm this week's real pricing and every look-and-lease special before it hits your list.</span></li><li class="pain-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Application fees run $50 to $85 and you don't get them back. We check your credit, history, and income against each community's screening habits first, so you're not gambling on long shots.</span></li><li class="pain-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>PCSing to JBSA? We build lists around Lackland, Fort Sam, and Randolph timelines and BAH budgets all the time.</span></li></ul>
+    </div>
+    <div class="sa-card">
+<form method="POST" action="https://n8n.dentals.targetdial.co/webhook/NewWeb4" id="sa-form" novalidate>
+<input type="hidden" name="referredBy" value="BROKER: Spirit Real Estate (TREC# 562021-B)">
+<input type="hidden" name="city" value="San Antonio">
+<input type="hidden" name="formId" value="sa-apartment-search">
+<input type="hidden" name="formTitle" value="Get Matched - San Antonio">
+<input type="hidden" name="sourceUrl" value="">
+
+<div id="step1" class="p-5 border-b border-slate-100">
+<button type="button" onclick="toggleStep(1)" class="w-full flex justify-between items-center" aria-expanded="false" aria-controls="body1">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold" style="background:#469fe4;color:#fff;width:1.75rem;height:1.75rem;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem">1</span>
+<span class="text-sm font-bold text-brand-black">Your move &amp; budget</span>
+</div>
+<svg id="arrow1" class="w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div id="body1" class="mt-4 space-y-3">
+<div><label for="move-date" class="block text-xs font-medium text-slate-600 mb-1">Move date *</label><input id="move-date" type="date" name="moveDate" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"></div>
+<div class="grid grid-cols-2 gap-2">
+<div><label for="bedrooms" class="block text-xs font-medium text-slate-600 mb-1">Bedrooms *</label><select id="bedrooms" name="bedrooms" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"><option value="">Select...</option><option>Studio</option><option>1bd / 1ba</option><option>2bd / 1ba</option><option>2bd / 2ba</option><option>3bd / 2ba</option></select></div>
+<div><label for="budget" class="block text-xs font-medium text-slate-600 mb-1">Budget *</label><select id="budget" name="budget" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"><option value="">Select...</option><option>$750 - $1,000</option><option>$1,000 - $1,250</option><option>$1,250 - $1,500</option><option>$1,500 - $1,750</option><option>$1,750 - $2,000</option><option>$2,000 - $2,500</option><option>$2,500 - $3,000</option><option>$3,000+</option></select></div>
+</div>
+<div><label for="sa-area" class="block text-xs font-medium text-slate-600 mb-1">Area *</label><select name="sanAntonioArea" id="sa-area" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"><option value="">Select area...</option><option value="not-sure">Not sure yet</option><option value="central">Central (Downtown, Alamo Heights, Pearl)</option><option value="northeast">Northeast (East of 281 / SAT Airport)</option><option value="stoneoak">Stone Oak (281 &amp; 1604)</option><option value="northcentral">North Central (Castle Hills, Shavano Park)</option><option value="lacantera">La Cantera / The Rim / Dominion</option><option value="utsa">UTSA</option><option value="medcenter">Medical Center</option><option value="northwest">Northwest (Leon Valley)</option><option value="west">West (Alamo Ranch, SeaWorld)</option><option value="lackland">Lackland AFB Area</option><option value="south">South (Brooks City, Southside)</option><option value="east">East (Live Oak, Converse, Randolph)</option></select></div>
+<div id="hoods-central" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Downtown"> Downtown</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Alamo Heights"> Alamo Heights</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Pearl Brewery"> Pearl</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Tobin Hill"> Tobin Hill</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Monte Vista"> Monte Vista</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Southtown"> Southtown</label></div></div>
+<div id="hoods-northeast" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="NE Inner Loop"> NE Inner Loop</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Fort Sam Area"> Fort Sam</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Austin Hwy"> Austin Hwy</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="SAT Airport"> SAT Airport</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="281 Corridor"> 281 Corridor</label></div></div>
+<div id="hoods-stoneoak" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Stone Oak"> Stone Oak</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Timberwood Park"> Timberwood</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="NW of 281/1604"> NW 281/1604</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="NE of 281/1604"> NE 281/1604</label></div></div>
+<div id="hoods-northcentral" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Castle Hills"> Castle Hills</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Shavano Park"> Shavano Park</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Hollywood Park"> Hollywood Park</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Huebner/Bitters"> Huebner/Bitters</label></div></div>
+<div id="hoods-lacantera" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="La Cantera"> La Cantera</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="The Rim"> The Rim</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Dominion"> Dominion</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Six Flags"> Six Flags</label></div></div>
+<div id="hoods-utsa" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="UTSA Campus"> UTSA Campus</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="N of 1604"> N of 1604</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="S of 1604"> S of 1604</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="E of I-10"> E of I-10</label></div></div>
+<div id="hoods-medcenter" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Medical Center"> Med Center</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="N of Med Center"> North</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="S of Med Center"> South</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="E of Med Center"> East</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="W of Med Center"> West</label></div></div>
+<div id="hoods-northwest" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Leon Valley"> Leon Valley</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Brauns Farm"> Braun's Farm</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Bandera Rd"> Bandera Rd</label></div></div>
+<div id="hoods-west" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Alamo Ranch"> Alamo Ranch</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="SeaWorld"> SeaWorld</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Westover Hills"> Westover Hills</label></div></div>
+<div id="hoods-lackland" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Lackland AFB"> Lackland AFB</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="N of Lackland"> North</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="S of Lackland"> South</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="E of Lackland"> East</label></div></div>
+<div id="hoods-south" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Brooks City"> Brooks City</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Southeast"> Southeast</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="I-37"> I-37</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="I-35"> I-35</label></div></div>
+<div id="hoods-east" class="hidden"><p class="text-xs text-slate-500 mb-1">Pick up to 4:</p><div class="grid grid-cols-2 gap-1 text-xs text-slate-600"><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Live Oak"> Live Oak</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Universal City"> Universal City</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Converse"> Converse</label><label class="flex items-center gap-1.5"><input type="checkbox" name="neighborhoods[]" value="Randolph AFB"> Randolph AFB</label></div></div>
+<button type="button" onclick="openStep(2)" class="w-full font-bold py-3 rounded-lg text-sm mt-3" style="background:#f59e0b;color:#111827;border:none;cursor:pointer">Continue →</button>
+</div>
+</div>
+
+<div id="step2" class="p-5 border-b border-slate-100" style="display:none">
+<button type="button" onclick="toggleStep(2)" class="w-full flex justify-between items-center" aria-expanded="false" aria-controls="body2">
+<div class="flex items-center gap-2">
+
+<span class="text-sm font-bold text-brand-black">Your rental situation</span>
+</div>
+<svg id="arrow2" class="w-4 h-4 text-slate-400 transition-transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div id="body2" class="mt-4 space-y-3 hidden">
+<div><label for="sa-rental" class="block text-xs font-medium text-slate-600 mb-1">Rental issues *</label><select name="rentalIssues" id="sa-rental" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"><option value="">Select...</option><option value="none">No rental issues!</option><option value="first time">1st Time Renter</option><option value="broken-lease">Broken Lease</option><option value="property-debt">Property Debt</option><option value="eviction">Eviction</option></select></div>
+<div id="sa-bl" class="hidden grid grid-cols-2 gap-2"><div><label for="how-long-ago" class="block text-xs text-slate-500 mb-1">How long ago?</label><select id="how-long-ago" name="brokenLease" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Select</option><option>0 - 1 years ago</option><option>1 - 2 years ago</option><option>3 - 5 years ago</option><option>5+ years or longer</option></select></div><div><label for="debt-owed" class="block text-xs text-slate-500 mb-1">Debt owed?</label><select id="debt-owed" name="brokenLeaseDebt" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Select</option><option>Zero balance</option><option>$1 - $1,000</option><option>$1,000 - $2,500</option><option>$2,500 - $5,000</option><option>$5,001+</option><option>Payment plan</option></select></div></div>
+<div id="sa-ev" class="hidden grid grid-cols-2 gap-2"><div><label for="how-long-ago-2" class="block text-xs text-slate-500 mb-1">How long ago?</label><select id="how-long-ago-2" name="eviction" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Select</option><option>0 - 1 years ago</option><option>1 - 2 years ago</option><option>3 - 5 years ago</option><option>5+ years ago</option></select></div><div><label for="debt-owed-2" class="block text-xs text-slate-500 mb-1">Debt owed?</label><select id="debt-owed-2" name="evictionDebt" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Select</option><option>Zero balance</option><option>$1 - $1,000</option><option>$1,000 - $2,500</option><option>$2,500 - $5,000</option><option>$5,001+</option><option>Payment plan</option></select></div></div>
+<div id="sa-pd" class="hidden grid grid-cols-2 gap-2"><div><label for="amount" class="block text-xs text-slate-500 mb-1">Amount?</label><select id="amount" name="propertyDebt" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Select</option><option>Zero balance</option><option>$1 - $1,000</option><option>$1,000 - $2,500</option><option>$2,500 - $5,000</option><option>$5,001+</option></select></div><div><label for="plan" class="block text-xs text-slate-500 mb-1">Plan?</label><select id="plan" name="activeDebt" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Select</option><option>ON a payment plan</option><option>NOT on a payment plan</option></select></div></div>
+<div><label for="sa-bg" class="block text-xs font-medium text-slate-600 mb-1">Background *</label><select name="backgroundIssues" id="sa-bg" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"><option value="">Select...</option><option value="clean">No issues</option><option value="felony">Felony</option><option value="misdemeanor">Misdemeanor</option></select></div>
+<div id="sa-fel" class="hidden"><select name="felonyDetails" aria-label="Felony: how long ago" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Felony details...</option><option>0-7 years ago</option><option>7+ years old</option><option>Deferred adjudication</option><option>DWI/DUI</option></select></div>
+<div id="sa-mis" class="hidden"><select name="misdemeanorDetails" aria-label="Misdemeanor: how long ago" class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs text-slate-700"><option value="">Misdemeanor details...</option><option>0 - 7 years ago</option><option>7+ years ago</option><option>DUI/DWI</option></select></div>
+<div class="grid grid-cols-2 gap-2"><div><label for="credit" class="block text-xs font-medium text-slate-600 mb-1">Credit *</label><select id="credit" name="creditScore" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"><option value="">Select...</option><option>Best (600+)</option><option>Better (550+)</option><option>Good (below 550)</option><option>No credit</option></select></div><div><label for="monthly-income" class="block text-xs font-medium text-slate-600 mb-1">Monthly income *</label><input id="monthly-income" type="number" name="income" required placeholder="$" class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700"></div></div>
+<button type="button" onclick="openStep(3)" class="w-full font-bold py-3 rounded-lg text-sm mt-3" style="background:#f59e0b;color:#111827;border:none;cursor:pointer">Continue →</button>
+</div>
+</div>
+
+<div id="step3" class="p-5" style="display:none">
+<button type="button" onclick="toggleStep(3)" class="w-full flex justify-between items-center" aria-expanded="false" aria-controls="body3">
+<div class="flex items-center gap-2">
+
+<span class="text-sm font-bold text-brand-black">Where we send your list</span>
+</div>
+<svg id="arrow3" class="w-4 h-4 text-slate-400 transition-transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div id="body3" class="mt-4 space-y-3 hidden">
+<div class="grid grid-cols-2 gap-2"><div><label for="first-name" class="block text-xs font-medium text-slate-600 mb-1">First name *</label><input id="first-name" type="text" name="firstName" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700" autocomplete="given-name"></div><div><label for="last-name" class="block text-xs font-medium text-slate-600 mb-1">Last name *</label><input id="last-name" type="text" name="lastName" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700" autocomplete="family-name"></div></div>
+<div><label for="phone" class="block text-xs font-medium text-slate-600 mb-1">Phone *</label><input id="phone" type="tel" name="phone" required placeholder="###-###-####" class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700" autocomplete="tel"></div>
+<div><label for="email" class="block text-xs font-medium text-slate-600 mb-1">Email *</label><input id="email" type="email" name="email" required placeholder="We never spam." class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-700" autocomplete="email"></div>
+<div style="margin-top:10px"><p style="font-weight:700;color:#1e293b;font-size:13px;margin:0 0 3px">Consent:<span style="color:#dc2626" aria-hidden="true"> *</span></p><label for="sa_consent" style="display:flex;align-items:center;gap:6px;cursor:pointer;font-weight:700;font-size:13px;color:#1e293b;margin:0"><input type="checkbox" id="sa_consent" name="consent" required aria-describedby="sa_consent_text" class="rounded" style="width:16px;height:16px;flex-shrink:0"><input type="hidden" name="consentText" value="San Antonio Second Chance Team and its agents may contact me at the number provided about my apartment search and related services, including by automated call, text, or artificial or prerecorded voice. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. I have read and agree to the Terms of Use and Privacy Policy."><input type="hidden" name="consentTimestamp" value=""><span>I agree</span></label><p id="sa_consent_text" style="font-size:11px;color:#4b5563;line-height:1.5;margin:4px 0 0">San Antonio Second Chance Team and its agents may contact me at the number provided about my apartment search and related services, including by automated call, text, or artificial or prerecorded voice. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. I have read and agree to the <a href="https://sanantonioapartmentreviews.com/terms/" style="color:#1d4ed8;text-decoration:underline;" rel="nofollow">Terms of Use</a> and <a href="https://sanantonioapartmentreviews.com/privacy/" style="color:#1d4ed8;text-decoration:underline;" rel="nofollow">Privacy Policy</a>.</p></div><button type="submit" class="w-full font-bold py-4 rounded-lg text-base" style="background:#f59e0b;color:#111827;border:none;cursor:pointer;box-shadow:0 4px 14px rgba(245,158,11,0.35)">Get My Matches →</button>
+
+</div>
+</div>
+
+</form>
+    </div>
+  </div>
+</section>
+
+<section class="border-b border-outline bg-surface-alt">
+  <div class="mx-auto max-w-5xl px-4 py-12">
+    <h2 class="serif text-2xl text-on-surface sm:text-3xl">Why renters fill this out before they tour</h2>
+    <p class="mt-2 max-w-2xl text-sm text-on-surface-variant">From the team behind
+      <a class="font-semibold text-primary-400 hover:underline" href="https://sanantonioapartmentreviews.com/">SanAntonioApartmentReviews.com</a>
+      &mdash; 397 communities scored on real resident reviews. Written by licensed apartment locators, not advertisers.</p>
+    <div class="mt-6 grid gap-4 md:grid-cols-3"><div class="sa-panel p-5"><h3 class="serif text-lg text-on-surface">We read the messy reviews for a living</h3><p class="mt-2 text-sm leading-relaxed text-on-surface-variant">We've scored 397 San Antonio communities from real resident reviews. When the place you're considering has a review page that's all over the map, we can usually tell you if it was a management change, a one-off, or a pattern you should walk away from.</p></div><div class="sa-panel p-5"><h3 class="serif text-lg text-on-surface">Real pricing, this week's specials</h3><p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Listing sites lag — sometimes by a month or more. Before your list goes out we confirm quotes and look-and-lease specials with the leasing offices themselves.</p></div><div class="sa-panel p-5"><h3 class="serif text-lg text-on-surface">Application fees aren't refundable</h3><p class="mt-2 text-sm leading-relaxed text-on-surface-variant">$50 to $85 a pop at most places here. We keep track of who tends to be flexible about credit, history, and pets, so your list leans hard toward places where you've genuinely got a shot.</p></div></div>
+  </div>
+</section>
+<section class="border-b border-outline">
+  <div class="mx-auto max-w-5xl px-4 py-10">
+    <div class="sa-panel flex flex-col items-start gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h2 class="serif text-xl text-on-surface">Military &amp; PCS moves</h2>
+        <p class="mt-1 max-w-xl text-sm text-on-surface-variant">Orders to JBSA? Tell us your report date and base in the form
+          &mdash; we build BAH-friendly lists around Lackland, Fort Sam Houston, and Randolph every week, and we can tour places for you before you're in town.</p>
+      </div>
+      <a href="#get-list" class="whitespace-nowrap rounded-btn px-5 py-2.5 text-sm font-bold"
+         style="background:#f59e0b;color:#111827">Start my list &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    <h2 class="serif text-2xl text-on-surface">Quick answers</h2>
+    <dl class="mt-6 space-y-5 text-sm"><div><dt class="font-medium text-on-surface">What does this cost me?</dt><dd class="mt-1 text-on-surface-variant">Nothing. Communities pay locator fees when you sign a lease — the same budget they use for advertising. You'll never get a bill from us.</dd></div><div><dt class="font-medium text-on-surface">How is this different from the review pages?</dt><dd class="mt-1 text-on-surface-variant">Reviews tell you how residents feel after move-in. They can't tell you what a unit quotes this week, which specials are running, or how a property tends to screen applicants. That's the half we add.</dd></div><div><dt class="font-medium text-on-surface">How fast is the list?</dt><dd class="mt-1 text-on-surface-variant">Usually within 24 hours, sent to your phone and email. If you're on a tight timeline, say so and we'll move quicker.</dd></div><div><dt class="font-medium text-on-surface">I'm stationed at JBSA / moving on orders. Can you work around a report date?</dt><dd class="mt-1 text-on-surface-variant">All the time — PCS moves are half our job. Note your base and report date in the form and we'll pace the search to your arrival.</dd></div><div><dt class="font-medium text-on-surface">What happens after I get the list?</dt><dd class="mt-1 text-on-surface-variant">Heart your favorites and we take it from there — tours, applications, follow-up, all the way through move-in.</dd></div></dl>
+    <div class="mt-9 text-center">
+      <a href="#get-list" class="inline-block rounded-btn px-8 py-3.5 text-base font-bold"
+         style="background:#f59e0b;color:#111827;box-shadow:0 4px 14px rgba(245,158,11,0.35)">Get My Free Shortlist &rarr;</a>
+      <p class="mt-2 text-[13px] text-on-surface-variant">$0 cost &middot; list within 24 hours &middot; no obligation</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="mt-16 border-t border-outline bg-surface-container"> <div class="mx-auto max-w-6xl px-4 pt-14 pb-8"> <div class="grid gap-12 md:grid-cols-12"> <!-- Brand --> <div class="md:col-span-4"> <img src="/images/logo.png" alt="San Antonio Apartment Reviews Guide" class="mb-3 h-10 w-auto" loading="lazy"> <p class="max-w-sm text-sm text-on-surface-variant">The lease is 12 months. The research takes 5 minutes.</p> <p class="mt-4 text-xs text-on-surface-variant">
+Published by <a class="hover:text-primary-600" href="https://sanantonioaapartmentreviews.com" rel="publisher">SanAntonioApartmentReviews.com</a>  &middot; edited by San Antonio Apartment Locators Group </p>  </div> <!-- Link columns --> <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-8"> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">Browse</span> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/browse/">Search &amp; map</a>  </div> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">Rankings &amp; guides</span>  <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/guide/">Insights</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/compare/">Compare</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/tools/">Calculators</a> </div> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">About</span> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="#get-list">Check Availability</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/about/">About</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/how-we-score/">How We Score</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/listing-policy/">Corrections &amp; removals</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/privacy/">Privacy</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/terms/">Terms</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/advertise/">Advertise</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://sanantonioapartmentreviews.com/contact/">Contact</a> </div> </div> </div> <!-- Bottom bar: data disclosure (E1) + copyright --> <div class="mt-12 flex flex-col gap-3 border-t border-outline-variant pt-6 text-xs text-on-surface-variant sm:flex-row sm:items-center sm:justify-between"> <p class="max-w-3xl"> Our scores and review insights come from public Google reviews. We don&#39;t republish review text, and each listing links directly to Google as the original source. Last updated 2026-07-23.
+</p> <p class="shrink-0">&copy; 2026 SanAntonioApartmentReviews.com</p> </div> </div> </footer>
+<script>
+function saVis(el){return !!(el.offsetWidth||el.offsetHeight||el.getClientRects().length);}
+function saClear(el){el.style.outline='';el.style.outlineOffset='';el.removeAttribute('aria-invalid');
+var h=el.type==='checkbox'?(el.closest('label')||el.parentNode):el.parentNode;
+if(h){var m=h.querySelector('.sa-errmsg');if(m){if(m.remove)m.remove();else m.parentNode.removeChild(m);}}}
+function saMark(el,msg){el.style.outline='2px solid #dc2626';el.style.outlineOffset='2px';
+el.setAttribute('aria-invalid','true');
+var h=el.type==='checkbox'?(el.closest('label')||el.parentNode):el.parentNode;
+if(h&&!h.querySelector('.sa-errmsg')){var s=document.createElement('p');s.className='sa-errmsg';
+s.setAttribute('role','alert');s.style.cssText='color:#dc2626;font-size:12px;font-weight:600;margin-top:4px';
+s.textContent=msg;h.appendChild(s);}
+if(!el.dataset.saBound){el.dataset.saBound='1';
+['input','change'].forEach(function(ev){el.addEventListener(ev,function(){saClear(el);});});}}
+function saValidate(f){var bad=null,n=0;
+f.querySelectorAll('[required]').forEach(function(el){
+if(!saVis(el)&&el.type!=='checkbox')return;
+var empty=(el.type==='checkbox')?!el.checked:!String(el.value||'').trim();
+if(empty){n++;if(!bad)bad=el;
+saMark(el,el.type==='checkbox'?'Please read the consent and check the \u2018I agree\u2019 box.':'Please complete this field.');}
+else{saClear(el);}});
+if(bad){try{bad.scrollIntoView({behavior:'smooth',block:'center'});}catch(e){}
+try{bad.focus({preventScroll:true});}catch(e){try{bad.focus();}catch(e2){}}
+return false;}
+return true;}
+document.addEventListener('submit',function(e){
+var f=e.target;
+if(f&&f.id==='sa-form'&&!saValidate(f)){e.preventDefault();e.stopImmediatePropagation();
+f.removeAttribute('data-sa-sent');}
+},true);
+</script>
+<script>
+document.querySelector('[name="sourceUrl"]').value=window.location.href;
+
+function toggleStep(n){
+ var body=document.getElementById('body'+n);
+ var open=body.classList.toggle('hidden')===false;
+ var btn=document.querySelector('[aria-controls="body'+n+'"]');
+ if(btn){btn.setAttribute('aria-expanded',String(open));}
+}
+function openStep(n){
+ // Close all bodies, open target
+ for(var i=1;i<=3;i++){
+    document.getElementById('body'+i).classList.add('hidden');
+    document.getElementById('arrow'+i).classList.add('rotate-180');
+  }
+  // Show the step div itself (steps 2 and 3 start hidden)
+  document.getElementById('step'+n).style.display='';
+  document.getElementById('body'+n).classList.remove('hidden');
+  document.getElementById('arrow'+n).classList.remove('rotate-180');
+  // Scroll the step into view
+  document.getElementById('step'+n).scrollIntoView({behavior:'smooth',block:'nearest'});
+  // Update step 1 badge to checkmark
+  var b1=document.getElementById('badge1');
+  if(b1&&n>1){b1.style.background='#22c55e';b1.textContent='\u2713'}
+}
+
+// Area neighborhoods
+document.getElementById('sa-area').addEventListener('change',function(){
+ document.querySelectorAll('[id^=hoods-]').forEach(function(e){e.classList.add('hidden')});
+ var v=this.value;
+ if(v&&v!=='not-sure'){var el=document.getElementById('hoods-'+v);if(el)el.classList.remove('hidden')}
+});
+
+// Rental conditional
+document.getElementById('sa-rental').addEventListener('change',function(){
+ ['sa-bl','sa-ev','sa-pd'].forEach(function(id){document.getElementById(id).classList.add('hidden')});
+ var m={'broken-lease':'sa-bl','eviction':'sa-ev','property-debt':'sa-pd'};
+ if(m[this.value])document.getElementById(m[this.value]).classList.remove('hidden');
+});
+
+// Background conditional
+document.getElementById('sa-bg').addEventListener('change',function(){
+ document.getElementById('sa-fel').classList.add('hidden');
+ document.getElementById('sa-mis').classList.add('hidden');
+ if(this.value==='felony')document.getElementById('sa-fel').classList.remove('hidden');
+ if(this.value==='misdemeanor')document.getElementById('sa-mis').classList.remove('hidden');
+});
+
+// Limit checkboxes to 4
+document.querySelectorAll('[id^=hoods-]').forEach(function(g){
+ g.querySelectorAll('input[type=checkbox]').forEach(function(cb){
+ cb.addEventListener('change',function(){if(g.querySelectorAll('input:checked').length>4)this.checked=false});
+ });
+});
+</script>
+<script>
+(function () {
+  var FS_KEY  = "3bcffabee422cf6112d37b2bb0d7c9db";
+  var SUBJECT = "Guest Card - San Antonio Apartment Reviews Referred By: the San Antonio Apartment Locating Team - Apartment Locators with Spirit Real Estate";
+  var THANKS  = "/thank-you/";
+  var HOOK    = "n8n.dentals.targetdial.co";
+
+  document.addEventListener("submit", function (e) {
+    var f = e.target;
+    if (!f || !f.action || f.action.indexOf(HOOK) === -1) return;
+    if (f.getAttribute("data-sa-sent")) return;
+    f.setAttribute("data-sa-sent", "1");
+    e.preventDefault();
+
+    var fd = new FormData(f);
+    if (!fd.get("sourceUrl") && !fd.get("source_url")) fd.append("sourceUrl", location.href);
+
+    var next = fd.get("_next") || THANKS;
+
+    var btn = f.querySelector('button[type="submit"], input[type="submit"]');
+    if (btn) { btn.disabled = true; if (btn.tagName === "BUTTON") btn.textContent = "Sending..."; }
+
+    var body = new URLSearchParams(fd);
+
+    // FormSubmit payload. The AJAX endpoint answers with readable JSON and
+    // supports CORS, so failures surface instead of disappearing.
+    // Built inside try/catch: the email mirror must never be able to break the n8n post.
+    var mail = null;
+    try {
+      mail = {};
+      fd.forEach(function (v, k) { if (mail[k]) { mail[k] += ", " + v; } else { mail[k] = v; } });
+      mail._subject  = SUBJECT;
+      mail._captcha  = "false";
+      mail._template = "table";
+    } catch (err) { mail = null; console.error("[lead] mirror payload build failed:", err); }
+
+    var done = false;
+    function go() { if (done) return; done = true; window.location.href = next; }
+
+    // keepalive lets the request finish even after we navigate away.
+    var n8n = fetch(f.action, {
+      method: "POST", body: body, mode: "no-cors", credentials: "omit", keepalive: true
+    }).catch(function (err) { console.error("[lead] n8n post failed:", err); });
+
+    var fs = (FS_KEY && mail) ? fetch("https://formsubmit.co/ajax/" + FS_KEY, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(mail),
+      keepalive: true
+    }).then(function (r) { return r.json().catch(function () { return { status: r.status }; }); })
+      .then(function (j) {
+        if (j && (j.success === "true" || j.success === true)) { console.log("[lead] FormSubmit accepted"); }
+        else { console.error("[lead] FormSubmit did NOT accept:", j); }
+        return j;
+      })
+      .catch(function (err) { console.error("[lead] FormSubmit request failed:", err); })
+      : Promise.resolve();
+
+    Promise.all([n8n, fs]).then(go, go);
+    setTimeout(go, 6000);
+  }, true);
+})();
+</script>
+<script>(function(){
+function iso(){return new Date().toISOString();}
+function bind(){
+document.querySelectorAll('input[type="checkbox"][name="consent"],#hf_consent').forEach(function(cb){
+if(cb.dataset.tsBound)return; cb.dataset.tsBound='1';
+var f=cb.form||document; 
+function field(){return (f.querySelector&&f.querySelector('[name="consentTimestamp"]'))||document.getElementById('hf_consent_ts');}
+cb.addEventListener('change',function(){var el=field(); if(!el)return; el.value=cb.checked?iso():'';});
+});}
+document.addEventListener('astro:page-load',bind);
+document.readyState==='loading'?document.addEventListener('DOMContentLoaded',bind):bind();
+})();</script>
+</body>
+</html>
